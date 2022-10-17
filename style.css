@@ -1,0 +1,162 @@
+/* Initializing page layout with flexbox */
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+/*Applying style for all wrapper's children*/
+.wrapper > * {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper > * img {
+  border-radius: 10%;
+}
+
+/*header  style*/
+.header {
+  background: #6EA4BF;
+  height: 120px;
+  min-width: 300px;
+}
+
+/*nav bar */
+.navbar {
+  background: #ECFEE8;
+  min-width: 300px;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column wrap;
+  list-style: none;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Kanit", sans-serif;
+}
+
+/*footer*/
+.footer {
+  background: #331E36;
+  height: 80px;
+  color: antiquewhite;
+}
+
+/*main style*/
+.main {
+  text-align: left;
+  background: #C2EFEB;
+  height: auto;
+  font-size: 24px;
+}
+
+/* main titles*/
+h3,
+h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Kanit", sans-serif;
+}
+
+h4 {
+  font-family: "Kanit", sans-serif;
+}
+
+/*main content*/
+.mainImage {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#firstImg {
+  border-radius: 10px 0px;
+}
+
+.imageType1 {
+  height: 200px;
+  width: 150px;
+  float: left;
+  margin: 10px 10px;
+}
+
+.anecdote {
+  padding-top: 10px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+/* Asides*/
+.aside1 {
+  background: #ECFEE8;
+  font-size: 24px;
+}
+.aside1 img {
+  margin-top: 50px;
+}
+
+.aside2 {
+  background: #ECFEE8;
+  font-size: 24px;
+}
+
+.celebrities {
+  padding-top: 50px;
+}
+
+/*Responsive with medi@queries*/
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3;
+  }
+  .aside1 {
+    order: 1;
+  }
+  .aside2 {
+    order: 2;
+  }
+  .main {
+    order: 2;
+  }
+  .footer {
+    order: 4;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 24px;
+  }
+  .header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #title {
+    font-size: 50px;
+  }
+}
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
