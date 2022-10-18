@@ -47,13 +47,6 @@
   width: 50%;
 }
 
-/*footer*/
-.footer {
-  background: #331E36;
-  height: 80px;
-  color: antiquewhite;
-}
-
 /*main style*/
 .main {
   text-align: left;
@@ -111,6 +104,15 @@ h4 {
 
 .celebrities {
   padding-top: 50px;
+}
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background: #331E36;
+  height: 80px;
+  color: antiquewhite;
 }
 
 /*Responsive with medi@queries*/
