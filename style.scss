@@ -12,15 +12,12 @@
     margin: 10px;
     flex: 1 100%;
     border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: sans-serif;
     img {
         border-radius: 10%;
-        box-shadow: 2px 4px 5px hsla(0, 0%, 0%, 0.8);
-        
+        box-shadow: 2px 4px 5px hsla(0, 0%, 0%, 0.8);  
     }
 }
-
 
 /*header  style*/
 .header {
@@ -30,20 +27,16 @@
 }
 
 /*bootstrap navbar*/
-
 .navbar {
     position: fixed;
     min-width:100%;
     margin: 0%;
     background: #6EA4BF;
-    border-radius: 0%;
-    
-
-    
+    border-radius: 0%;   
 }
 .navbar-toggler {
     border: none;
-    padding-right: 0%;
+    padding: 4px 0px 4px 0px;
 }
 .navbar-toggler-icon {
     width: 20px; 
@@ -53,15 +46,9 @@
 }
 
 
-
-
-
-
-
-
 /*main style*/
 .main {
-    text-align: left;
+    text-align: center;
     background: #C2EFEB;
     height: auto;
     font-size: 24px;
@@ -69,20 +56,12 @@
 }
 
 /* main titles*/
-
 h3,
 h2 {
     display: flex;
     justify-content: center;
-    font-family: 'Kanit', sans-serif;
     font-size: 1.2em;
-
 }
-
-h4 {
-    font-family: 'Kanit', sans-serif;
-}
-
 
 /*main content*/
 .mainImage {
@@ -90,41 +69,29 @@ h4 {
     display: flex;
     justify-content: center;
 }
-
 #firstImg {
     border-radius: 10px 0px;
 }
-
 .imageType1 {
     height: 200px;
     width: 150px;
     float: left;
     margin: 10px 10px;
 }
-
 .anecdote {
     padding-top: 10px;
     font-style: italic;
     font-size: 20px;
-
 }
-
 
 /* Asides*/
 .aside1, .aside2 {
-    
     background: #ECFEE8;
     font-size: 24px;
-    
     img {
         margin-top: 50px;
     }
 }
-
-
-
-
-
 .celebrities {
     padding-top: 50px;
 }
@@ -133,10 +100,24 @@ h4 {
     display: flex;
     justify-content: space-around;
     background: #331E36;
-    height: 80px;
+    max-height:max-content;
     color: antiquewhite;
+    font-size: .8em;   
 }
 
+.copyright {
+    display: flex;
+    align-items: end;
+    font-size: .8em;
+    justify-self: flex-end;
+    
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 
@@ -162,6 +143,7 @@ h4 {
 
     .footer {
         order: 4;
+        font-size: 1em;
     }
 
     .menu ul {
@@ -177,17 +159,11 @@ h4 {
         justify-content: center;
         align-items: center;
     }
-
-    #title {
-        font-size: 50px;
-
-    }
 }
 
 @media all and (min-width: 600px) {
     .aside {
         flex: 1;
-        
     }
 
     h1 {
@@ -199,7 +175,9 @@ h4 {
         flex-direction: row;
         justify-content: space-around;
         font-size: 20px;
-
+    }
+    .footer {
+        font-size: 1em;
     }
 }
 
