@@ -1,1 +1,6 @@
+#no published elements
 
+#scss files and style.css.map
+
+*.scss
+/style.css.map

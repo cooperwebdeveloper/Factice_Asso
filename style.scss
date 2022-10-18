@@ -1,4 +1,5 @@
 /* Initializing page layout with flexbox */
+
 .wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -15,8 +16,11 @@
 
     img {
         border-radius: 10%;
+        box-shadow: 2px 4px 5px hsla(0, 0%, 0%, 0.8);
+        
     }
 }
+
 
 /*header  style*/
 .header {
@@ -25,25 +29,29 @@
     min-width: 300px;
 }
 
-/*nav bar */
+/*bootstrap navbar*/
+
 .navbar {
-    background: #ECFEE8;
-    min-width: 300px;
+    position: fixed;
+    min-width:100%;
+    margin: 0%;
+    background: #6EA4BF;
+    border-radius: 0%;
+    
+
+    
+}
+.navbar-toggler {
+    border: none;
+    padding-right: 0%;
+}
+.navbar-toggler-icon {
+    width: 20px; 
+}
+.navbar-brand {
+    width: 50%;   
 }
 
-.menu {
-    display: flex;
-    align-items: flex-end;
-    flex-flow: column wrap;
-    list-style: none;
-}
-
-
-h1 {
-    display: flex;
-    justify-content: center;
-    font-family: 'Kanit', sans-serif;
-}
 
 
 
@@ -63,6 +71,7 @@ h1 {
     background: #C2EFEB;
     height: auto;
     font-size: 24px;
+    margin-top: 80px;
 }
 
 /* main titles*/
@@ -72,6 +81,7 @@ h2 {
     display: flex;
     justify-content: center;
     font-family: 'Kanit', sans-serif;
+    font-size: 1.2em;
 
 }
 
@@ -107,22 +117,19 @@ h4 {
 
 
 /* Asides*/
-.aside1 {
+.aside1, .aside2 {
+    
     background: #ECFEE8;
     font-size: 24px;
-
+    
     img {
         margin-top: 50px;
-
     }
 }
 
 
-.aside2 {
-    background: #ECFEE8;
-    font-size: 24px;
 
-}
+
 
 .celebrities {
     padding-top: 50px;
@@ -138,10 +145,12 @@ h4 {
 
     .aside1 {
         order: 1;
+        margin-top: 80px;
     }
 
     .aside2 {
         order: 2;
+        margin-top: 80px;
     }
 
     .main {
@@ -152,9 +161,8 @@ h4 {
         order: 4;
     }
 
-    .menu {
+    .menu ul {
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
         font-size: 24px;
 
@@ -176,6 +184,7 @@ h4 {
 @media all and (min-width: 600px) {
     .aside {
         flex: 1;
+        
     }
 
     h1 {
