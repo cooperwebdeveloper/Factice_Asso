@@ -8,15 +8,13 @@
 
 /*Applying style for all wrapper's children*/
 .wrapper>* {
+
     padding: 10px;
     margin: 10px;
     flex: 1 100%;
     border-radius: 10px;
     font-family: sans-serif;
-    img {
-        border-radius: 10%;
-        box-shadow: 2px 4px 5px hsla(0, 0%, 0%, 0.8);  
-    }
+
 }
 
 /*header  style*/
@@ -29,30 +27,37 @@
 /*bootstrap navbar*/
 .navbar {
     position: fixed;
-    min-width:100%;
+    min-width: 100%;
     margin: 0%;
     background: #6EA4BF;
-    border-radius: 0%;   
+    border-radius: 0%;
 }
+
 .navbar-toggler {
     border: none;
     padding: 4px 0px 4px 0px;
 }
+
 .navbar-toggler-icon {
-    width: 20px; 
-}
-.navbar-brand {
-    width: 50%;   
+    width: 20px;
 }
 
+.navbar-brand {
+    width: 50%;
+}
 
 /*main style*/
 .main {
     text-align: center;
-    background: #C2EFEB;
+    background: #b7d0ce;
     height: auto;
     font-size: 24px;
     margin-top: 80px;
+
+    img {
+        border-radius: 10%;
+        box-shadow: 2px 4px 5px hsla(0, 0%, 0%, 0.8);
+    }
 }
 
 /* main titles*/
@@ -69,15 +74,18 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
 #firstImg {
-    border-radius: 10px 0px;
+    border-radius: 10px;
 }
+
 .imageType1 {
     height: 200px;
     width: 150px;
     float: left;
     margin: 10px 10px;
 }
+
 .anecdote {
     padding-top: 10px;
     font-style: italic;
@@ -85,24 +93,46 @@ h2 {
 }
 
 /* Asides*/
-.aside1, .aside2 {
-    background: #ECFEE8;
+.aside1,
+.aside2 {
+    background: #bcc5ba;
     font-size: 24px;
-    img {
-        margin-top: 50px;
+}
+.aside1 {
+    .card{
+        position: inherit;
+        font-size: 18px;
+        margin-top: 20px;
+        box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.8);
+        background: #a6cecb;
+        .btn-primary{
+            background: #6EA4BF;
+            border: #6EA4BF;
+            color: #000;
+        } 
+    }
+    h5{
+        font-weight:bold;
     }
 }
-.celebrities {
-    padding-top: 50px;
+
+.aside2 {
+    .card {
+        margin: 20px;
+        box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.8);
+        position: inherit;
+        background:#a6cecb;
+    }
 }
+
 /*footer*/
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #331E36;
-    max-height:max-content;
+    max-height: max-content;
     color: antiquewhite;
-    font-size: .8em;   
+    font-size: .8em;
 }
 
 .copyright {
@@ -110,7 +140,7 @@ h2 {
     align-items: end;
     font-size: .8em;
     justify-self: flex-end;
-    
+
 }
 
 .contact {
@@ -176,6 +206,7 @@ h2 {
         justify-content: space-around;
         font-size: 20px;
     }
+
     .footer {
         font-size: 1em;
     }

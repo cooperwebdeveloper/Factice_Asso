@@ -13,10 +13,6 @@
   border-radius: 10px;
   font-family: sans-serif;
 }
-.wrapper > * img {
-  border-radius: 10%;
-  box-shadow: 2px 4px 5px hsla(0deg, 0%, 0%, 0.8);
-}
 
 /*header  style*/
 .header {
@@ -49,11 +45,15 @@
 
 /*main style*/
 .main {
-  text-align: left;
-  background: #C2EFEB;
+  text-align: center;
+  background: #b7d0ce;
   height: auto;
   font-size: 24px;
   margin-top: 80px;
+}
+.main img {
+  border-radius: 10%;
+  box-shadow: 2px 4px 5px hsla(0deg, 0%, 0%, 0.8);
 }
 
 /* main titles*/
@@ -61,12 +61,7 @@ h3,
 h2 {
   display: flex;
   justify-content: center;
-  font-family: sans-serif;
   font-size: 1.2em;
-}
-
-h4 {
-  font-family: sans-serif;
 }
 
 /*main content*/
@@ -77,7 +72,7 @@ h4 {
 }
 
 #firstImg {
-  border-radius: 10px 0px;
+  border-radius: 10px;
 }
 
 .imageType1 {
@@ -94,22 +89,39 @@ h4 {
 }
 
 /* Asides*/
-.aside1, .aside2 {
-  background: #ECFEE8;
+.aside1,
+.aside2 {
+  background: #bcc5ba;
   font-size: 24px;
 }
-.aside1 img, .aside2 img {
-  margin-top: 50px;
+
+.aside1 .card {
+  position: inherit;
+  font-size: 18px;
+  margin-top: 20px;
+  box-shadow: 2px 4px 10px hsla(0deg, 0%, 0%, 0.8);
+  background: #a6cecb;
+}
+.aside1 .card .btn-primary {
+  background: #6EA4BF;
+  border: #6EA4BF;
+  color: #000;
+}
+.aside1 h5 {
+  font-weight: bold;
 }
 
-.celebrities {
-  padding-top: 50px;
+.aside2 .card {
+  margin: 20px;
+  box-shadow: 2px 4px 10px hsla(0deg, 0%, 0%, 0.8);
+  position: inherit;
+  background: #a6cecb;
 }
 
 /*footer*/
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background: #331E36;
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
@@ -122,6 +134,7 @@ h4 {
   display: flex;
   align-items: end;
   font-size: 0.8em;
+  justify-self: flex-end;
 }
 
 .contact {
@@ -160,9 +173,6 @@ h4 {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-  }
-  #title {
-    font-size: 50px;
   }
 }
 @media all and (min-width: 600px) {
