@@ -40,9 +40,15 @@
 }
 
 .navbar-brand {
+  display: flex;
+  justify-content: start;
   width: 50%;
   padding-top: 0;
-  font-size: large;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: end;
 }
 
 /*main style*/
