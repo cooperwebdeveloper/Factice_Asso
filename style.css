@@ -41,6 +41,8 @@
 
 .navbar-brand {
   width: 50%;
+  padding-top: 0;
+  font-size: large;
 }
 
 /*main style*/
