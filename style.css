@@ -34,6 +34,9 @@
   border: none;
   padding: 4px 0px 4px 0px;
 }
+.navbar-toggler:focus {
+  border: 0 !important; /* doesn't work grrr*/
+}
 
 .navbar-toggler-icon {
   width: 20px;

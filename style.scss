@@ -14,7 +14,6 @@
     flex: 1 100%;
     border-radius: 10px;
     font-family: sans-serif;
-
 }
 
 /*header  style*/
@@ -36,12 +35,15 @@
 .navbar-toggler {
     border: none;
     padding: 4px 0px 4px 0px;
+    &:focus {
+        border:0 !important; /* doesn't work grrr*/
+      }
 }
 
 .navbar-toggler-icon {
     width: 20px;
-    
 }
+
 
 .navbar-brand {
     display: flex;
