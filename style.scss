@@ -1,3 +1,32 @@
+$headerBgColor: #6EA4BF;
+$mainBgColor: #b7d0ce;
+$asideBgColor: #bcc5ba;
+$cardBgColor: #f2ae1c;
+$cardBgColorHover: lighten(#f2ae1c, 15%);
+$footerBgColor: #331E36;
+$btnBgColor: #6EA4BF;
+$btnBgColorLighter: lighten(#6EA4BF, 10%);
+
+$large-font-size: 1.4em;
+$small-font-size: 0.8em;
+
+$medium-font-size: 1.2em;
+
+@mixin card {
+    margin-top: 20px;
+    box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.8);
+    position: inherit;
+}
+
+/*Placeholder*/
+%flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /* Initializing page layout with flexbox */
 
 .wrapper {
@@ -8,7 +37,6 @@
 
 /*Applying style for all wrapper's children*/
 .wrapper>* {
-
     padding: 10px;
     margin: 10px;
     flex: 1 100%;
@@ -20,7 +48,6 @@
 .header {
     background: #6EA4BF;
     height: 120px;
-    min-width: 300px;
 }
 
 /*bootstrap navbar*/
@@ -30,39 +57,47 @@
     margin: 0%;
     background: #6EA4BF;
     border-radius: 0%;
+    max-height: 70px;
 }
+
+.navbar-collapse {
+    background: #6EA4BF;
+}
+
 
 .navbar-toggler {
     border: none;
     padding: 4px 0px 4px 0px;
+
     &:focus {
-        border:0 !important; /* doesn't work grrr*/
-      }
+        border: 0 !important;
+        /* doesn't work grrr*/
+    }
 }
 
 .navbar-toggler-icon {
     width: 20px;
 }
 
+.navbar-expand-lg {
+    padding: 0;
+}
 
 .navbar-brand {
-    display: flex;
-    justify-content: start;
-    width: 50%;
-    padding-top: 0;
+    img {
+        height: 60px;
+    }
 }
-.navbar-collapse{
-    display: flex;
-    justify-content: end;
-}
+
 
 /*main style*/
 .main {
     text-align: center;
     background: #b7d0ce;
     height: auto;
-    font-size: 24px;
+    font-size: $medium-font-size;
     margin-top: 80px;
+    min-width: 50vmax;
 
     img {
         border-radius: 10%;
@@ -73,16 +108,20 @@
 /* main titles*/
 h3,
 h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 1.2em;
+    @extend %flex-centered;
+    font-size: $medium-font-size;
 }
 
 /*main content*/
 .mainImage {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
+    @extend %flex-centered;
+    align-items: flex-start;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+
 }
 
 #firstImg {
@@ -99,41 +138,63 @@ h2 {
 .anecdote {
     padding-top: 10px;
     font-style: italic;
-    font-size: 20px;
+    font-size: $small-font-size;
 }
 
 /* Asides*/
 .aside1,
 .aside2 {
     background: #bcc5ba;
-    font-size: 24px;
+    font-size: $medium-font-size;
+    min-width: 50vmax;
+
 }
+
 .aside1 {
-    .card{
-        position: inherit;
-        font-size: 18px;
-        margin-top: 20px;
-        box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.8);
-        background: #a6cecb;
-        .btn-primary{
-            background: #6EA4BF;
-            border: #6EA4BF;
+    .card {
+        @include card;
+        font-size: $small-font-size;
+        background: $cardBgColor;
+        transition: all .5s;
+
+        &:hover {
+            transition: all .5s;
+            background: $cardBgColorHover;
+        }
+
+        .btn-primary {
+            background: $btnBgColor;
+            border: none;
             color: #000;
-        } 
+            transition: all .5s;
+
+            &:hover {
+                transition: all .5s;
+                background: $btnBgColorLighter;
+            }
+        }
     }
-    h5{
-        font-weight:bold;
+
+    h5 {
+        font-weight: bold;
     }
 }
 
 .aside2 {
+    .celebrities {
+        display: flex;
+        flex-direction: column;
+    }
+
     .card {
-        margin: 20px;
-        box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.8);
-        position: inherit;
-        background:#a6cecb;
+        @include card;
+        background: $headerBgColor;
+        border: none;
+        width: 50%;
+        align-self: center;
     }
 }
+
 
 /*footer*/
 .footer {
@@ -141,30 +202,26 @@ h2 {
     justify-content: space-between;
     background: #331E36;
     max-height: max-content;
+    min-width: 50vmax;
     color: antiquewhite;
-    font-size: .8em;
+    font-size: $small-font-size;
 }
 
 .copyright {
     display: flex;
     align-items: end;
-    font-size: .8em;
     justify-self: flex-end;
-
 }
 
 .contact {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
+    @extend %flex-centered;
 }
-
-
 
 /*Responsive with medi@queries*/
 @media all and (min-width: 800px) {
     .main {
-        flex: 3;
+        flex: 2;
     }
 
     .aside1 {
@@ -175,7 +232,15 @@ h2 {
     .aside2 {
         order: 2;
         margin-top: 80px;
+        .card{
+            width: 80%;
+            align-self: center; 
+        }
     }
+       
+            
+    
+    
 
     .main {
         order: 2;
@@ -183,27 +248,26 @@ h2 {
 
     .footer {
         order: 4;
-        font-size: 1em;
+        font-size: $medium-font-size;
     }
 
-    .menu ul {
+
+    .navbar-brand {
         display: flex;
-        justify-content: space-around;
-        font-size: 24px;
-
+        justify-content: start;
+        width: 20%;
+        padding-top: 0;
     }
 
-    .header {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-    }
+
+
 }
 
 @media all and (min-width: 600px) {
     .aside {
         flex: 1;
+        font-size: $medium-font-size;
+        min-width: auto;
     }
 
     h1 {
@@ -214,11 +278,78 @@ h2 {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        font-size: 20px;
     }
 
     .footer {
-        font-size: 1em;
+        font-size: $medium-font-size;
+    }
+
+    .main {
+        font-size: $large-font-size;
+    }
+
+    .navbar-brand {
+        width: 30%;
+    }
+
+    .navbar-collapse {
+        justify-content: end;
+        font-size: $medium-font-size;
+    }
+}
+
+@media all and (min-width: 1100px) {
+
+    .mainImage {
+        align-items: flex-start;
+        min-height: 300px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+
+        h1 {
+            font-size: $large-font-size;
+        }
+    }
+
+    .navbar-nav {
+        font-size: $medium-font-size;
+    }
+
+    .footer {
+        font-size: $large-font-size;
+    }
+
+    .follow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        i {
+            margin-left: 40px;
+            font-size: xx-large;
+        }
+    }
+    .aside2{
+        .card{
+            width: 50%;
+            align-self: center; 
+        }
+    }
+
+}
+
+@media print {
+    img {
+        display: none;
+    }
+
+    .wrapper {
+        font-size: 16px;
+    }
+
+    .card {
+        display: none;
     }
 }
 
