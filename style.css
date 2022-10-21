@@ -1,65 +1,10 @@
+@import url(./main.scss);
 /*Placeholder*/
-.contact, .mainImage, h3,
+.mainImage, h3,
 h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* Initializing page layout with flexbox */
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  text-align: center;
-}
-
-/*Applying style for all wrapper's children*/
-.wrapper > * {
-  padding: 10px;
-  margin: 10px;
-  flex: 1 100%;
-  border-radius: 10px;
-  font-family: sans-serif;
-}
-
-/*header  style*/
-.header {
-  background: #6EA4BF;
-  height: 120px;
-}
-
-/*bootstrap navbar*/
-.navbar {
-  position: fixed;
-  min-width: 100%;
-  margin: 0%;
-  background: #6EA4BF;
-  border-radius: 0%;
-  max-height: 70px;
-}
-
-.navbar-collapse {
-  background: #6EA4BF;
-}
-
-.navbar-toggler {
-  border: none;
-  padding: 4px 0px 4px 0px;
-}
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.navbar-toggler-icon {
-  width: 20px;
-}
-
-.navbar-expand-lg {
-  padding: 0;
-}
-
-.navbar-brand img {
-  height: 60px;
 }
 
 /*main style*/
@@ -164,29 +109,6 @@ h2 {
   align-self: center;
 }
 
-/*footer*/
-.footer {
-  display: flex;
-  justify-content: space-between;
-  background: #331E36;
-  max-height: -webkit-max-content;
-  max-height: -moz-max-content;
-  max-height: max-content;
-  min-width: 50vmax;
-  color: antiquewhite;
-  font-size: 0.8em;
-}
-
-.copyright {
-  display: flex;
-  align-items: end;
-  justify-self: flex-end;
-}
-
-.contact {
-  flex-direction: column;
-}
-
 /*Responsive with medi@queries*/
 @media all and (min-width: 800px) {
   .main {
@@ -207,16 +129,6 @@ h2 {
   .main {
     order: 2;
   }
-  .footer {
-    order: 4;
-    font-size: 1.2em;
-  }
-  .navbar-brand {
-    display: flex;
-    justify-content: start;
-    width: 20%;
-    padding-top: 0;
-  }
 }
 @media all and (min-width: 600px) {
   .aside {
@@ -226,24 +138,6 @@ h2 {
   }
   h1 {
     font-size: 40px;
-  }
-  .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .footer {
-    font-size: 1.2em;
-  }
-  .main {
-    font-size: 1.4em;
-  }
-  .navbar-brand {
-    width: 30%;
-  }
-  .navbar-collapse {
-    justify-content: end;
-    font-size: 1.2em;
   }
 }
 @media all and (min-width: 1100px) {
@@ -257,21 +151,6 @@ h2 {
   .mainImage h1 {
     font-size: 1.4em;
     padding-top: 50px;
-  }
-  .navbar-nav {
-    font-size: 1.2em;
-  }
-  .footer {
-    font-size: 1.4em;
-  }
-  .follow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .follow i {
-    margin-left: 40px;
-    font-size: xx-large;
   }
   .aside2 .card {
     width: 50%;
