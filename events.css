@@ -1,4 +1,9 @@
 /*Placeholder*/
+.title {
+  height: 40px;
+  width: 100%;
+}
+
 .card {
   position: inherit;
   margin: 1em;
@@ -21,10 +26,9 @@
   transform: scale(1.2);
   transition: all 1s;
 }
-
-.title {
-  height: 40px;
-  width: 100%;
+.card .btn.btn-primary {
+  background: #6EA4BF;
+  border: none;
 }
 
 /*flip cards*/
@@ -40,7 +44,7 @@
 .cards {
   display: flex;
   align-self: center;
-  margin-top: 10px;
+  margin-top: 20px;
   flex-flow: column nowrap;
   height: 700px;
 }
@@ -90,23 +94,23 @@
   transform: rotateY(180deg);
 }
 
-/*mediaqueries*/
-@media all and (min-width: 800px) {
-  .cards {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
+/*modal */
+.modal-content {
+  background: #6EA4BF;
 }
-@media all and (min-width: 1200px) {
-  .events {
-    display: flex;
-    flex-direction: column;
-  }
-  .cards {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100vw;
-    padding-right: 30px;
-  }
+.modal-content .close {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+.modal-content .btn-secondary {
+  background: #333;
+}
+.modal-content .btn-primary {
+  background: #f2ae1c;
+  color: #000;
+  border: none;
+}
+.modal-content .btn-primary:active {
+  background: #f6c864;
 }/*# sourceMappingURL=events.css.map */

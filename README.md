@@ -1,5 +1,5 @@
 # Factice_Asso
-This is a factice Association Project
+This is a fictive Association Project
 
 colors by Coolors.co
 fonts by fontjoy.com

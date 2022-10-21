@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Association France Asperger offre un soutien aux personnes atteintes du syndrome d'Asperger et à leurs proches. Mieux connaître le syndrôme d'Asperger, évènements, faire un don...">
+    
     <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./layout.css">
     <link rel="stylesheet" href="./main.css">
@@ -24,10 +27,10 @@
                     <span class="navbar-toggler-icon "></span>
 
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNav" toggle="collapse" data-target=".navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Home</a>
+                            <a class="nav-link" href="./index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Évènements</a>
@@ -45,9 +48,11 @@
                 </div>
             </div>
         </nav>
+        <!-- content -->
+    
         <article class="events">
             <div class="title">
-                <h1>Association France Asperger</h1>
+                <h1>Association France Asperger / Évènements</h1>
             </div>
             <!-- events cards -->
             <div class="cards">
@@ -56,22 +61,22 @@
                         <img src="./pictures/avignon.png" class="card-img-top" alt="atelier théâtre Avignon">
                         <div class="card-body">
                             <h5 class="card-title">Atelier théâtre à Avignon</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-register">S'inscrire</a>
-                            <a href="#" class="btn btn-location">S'y rendre</a>
+                            <p class="card-text">Apprendre les émotions de l'autre grâce à nos acteurs bénévoles...</p>
+                            <a class="btn btn-register">inscription</a>
+
                         </div>
                     </div>
                     <div class="card card-back" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11490.55931473735!2d4.84169465!3d43.94612715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1666377405546!5m2!1sfr!2sfr"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Atelier théâtre</h5>
+                            <p class="card-text">Des ateliers tout public, d'une durée d'une heure ou plus.
+                                Au Théâtre des Amendiers à Avignon.
+                            </p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal" data-whatever="formulaire inscription">j'y participe!</button>
                         </div>
                     </div>
                 </div>
@@ -81,22 +86,21 @@
                         <img src="./pictures/camargue.png" class="card-img-top" alt="excursions en Camargue">
                         <div class="card-body">
                             <h5 class="card-title">Excursion en Camargue</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-register">S'inscrire</a>
-                            <a href="#" class="btn btn-location">S'y rendre</a>
+                            <p class="card-text">Une promenade tout public avec nos guides bénévoles...</p>
+                            <a class="btn btn-register">inscription</a>
+
                         </div>
                     </div>
                     <div class="card card-back" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23148.05522764955!2d4.390684117619772!3d43.512621151373565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6619776fd157b%3A0x8309eee53def662d!2s13460%20Saintes-Maries-de-la-Mer!5e0!3m2!1sfr!2sfr!4v1666377607649!5m2!1sfr!2sfr"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Excursion en Camargue</h5>
+                            <p class="card-text">Une promenade tout public avec nos guides bénévoles de la région, à
+                                pied, à cheval ou à vélo...</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal" data-whatever="formulaire inscription">j'y participe!</button>
                         </div>
                     </div>
                 </div>
@@ -106,22 +110,21 @@
                             alt="Rencontres familles en Bretagne">
                         <div class="card-body">
                             <h5 class="card-title">Rencontres Familles en Bretagne</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-register">S'inscrire</a>
-                            <a href="#" class="btn btn-location">S'y rendre</a>
+                            <p class="card-text">Au coeur la ville de Vannes, profitez...</p>
+                            <a class="btn btn-register">inscription</a>
+
                         </div>
                     </div>
                     <div class="card card-back" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42997.97276690202!2d-2.7834704881331938!3d47.657744084652435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101e84c37de291%3A0xb9f358307b233d13!2sVannes!5e0!3m2!1sfr!2sfr!4v1666377659260!5m2!1sfr!2sfr"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Rencontres Familles</h5>
+                            <p class="card-text">Au coeur la ville de Vannes, profitez de cette ambiance amicale et
+                                bienveillante pour échanger ensemble.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal" data-whatever="formulaire inscription">j'y participe!</button>
                         </div>
                     </div>
                 </div>
@@ -131,22 +134,21 @@
                             alt="Conférence Autisme Paris">
                         <div class="card-body">
                             <h5 class="card-title">Conférence sur l'autisme à Paris</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-register">S'inscrire</a>
-                            <a href="#" class="btn btn-location">S'y rendre</a>
+                            <p class="card-text">Au palais des congrès de Paris...</p>
+                            <a class="btn btn-register">inscription</a>
+
                         </div>
                     </div>
                     <div class="card card-back" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.87843005653!2d2.2035131007629296!3d48.858878735015765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1666377736457!5m2!1sfr!2sfr"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Conférence sur l'autisme</h5>
+                            <p class="card-text">Au palais des congrès de Paris une conférence animée par les plus
+                                grands spécialistes européens de l'autisme.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal" data-whatever="formulaire inscription">j'y participe!</button>
                         </div>
                     </div>
                 </div>
@@ -155,22 +157,22 @@
                         <img src="./pictures/jeux de role (1).png" class="card-img-top" alt="Jeux de rôle à Lille">
                         <div class="card-body">
                             <h5 class="card-title">Jeux de rôle à Lille</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-register">S'inscrire</a>
-                            <a href="#" class="btn btn-location">S'y rendre</a>
+                            <p class="card-text">Tournage de film comme si vous y étiez, grâce à nos acteurs bénévoles,
+                                soyez qui vous voulez!</p>
+                            <a class="btn btn-register">inscription</a>
+
                         </div>
                     </div>
                     <div class="card card-back" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40492.54356052144!2d3.011878482555792!3d50.63112979599904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d579b3256e11%3A0x40af13e81646360!2sLille!5e0!3m2!1sfr!2sfr!4v1666377766325!5m2!1sfr!2sfr"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Jeux de rôle à Lille</h5>
+                            <p class="card-text">Tournage de film comme si vous y étiez, grâce à nos acteurs bénévoles,
+                                soyez qui vous voulez!</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal" data-whatever="formulaire inscription">j'y participe!</button>
                         </div>
                     </div>
                 </div>
@@ -180,27 +182,63 @@
                             alt="Médiation animale dans le Gard">
                         <div class="card-body">
                             <h5 class="card-title">Médiation animale dans le Gard</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn btn-register">S'inscrire</a>
-                            <a href="#" class="btn btn-location">S'y rendre</a>
+                            <p class="card-text">Dans le Gard et aux alentours, retrouvez nos spécialistes et leurs
+                                fidèles compagnons...</p>
+                            <a class="btn btn-register">inscription</a>
+
                         </div>
                     </div>
                     <div class="card card-back" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11657.648508900005!2d3.88063814904838!3d44.10867738772619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b4718941d5a91d%3A0x4078821166b3800!2s30270%20Saint-Jean-du-Gard!5e0!3m2!1sfr!2sfr!4v1666377807909!5m2!1sfr!2sfr"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Médiation animale</h5>
+                            <p class="card-text">Dans le Gard et aux alentours, retrouvez nos spécialistes et leurs
+                                fidèles compagnons pour ressentir des émotions intenses.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal" data-whatever="formulaire inscription">j'y participe!</button>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
+
+
+
+<!-- modal -->
+
+<div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="Formulaire d'inscription" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Participer à l'évènement:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="nom" class="col-form-label">Nom et prénom:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Laissez-nous un message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-primary">Envoyer la demande de réservation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+       
+        <!-- end modal -->
+        
         <footer class="footer">
             <div class="contact">
                 <p>Siège:</p>
@@ -222,6 +260,10 @@
     </div>
     <script src="./bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/fbd5f82f0e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
 </body>
 
 </html>
