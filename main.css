@@ -13,6 +13,10 @@
   border-radius: 10px;
   font-family: sans-serif;
 }
+.wrapper > * a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /*header  style*/
 .header {
@@ -63,7 +67,7 @@
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
-  min-width: 50vmax;
+  min-width: auto;
   color: antiquewhite;
   font-size: 0.8em;
 }
