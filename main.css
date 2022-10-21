@@ -131,4 +131,7 @@
     margin-left: 40px;
     font-size: xx-large;
   }
+  .follow i:hover {
+    scale: 1.4;
+  }
 }/*# sourceMappingURL=main.css.map */

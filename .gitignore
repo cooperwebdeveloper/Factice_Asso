@@ -3,4 +3,5 @@
 #scss files and style.css.map
 
 *.scss
-/style.css.map
+style.css.map
+/bootstrap-5.2.2-dist
