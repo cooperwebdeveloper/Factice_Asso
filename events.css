@@ -6,4 +6,52 @@
   margin-top: 80px;
   width: auto;
   background: #f2ae1c;
+  align-items: center;
+}
+
+.card {
+  position: inherit;
+  margin: 1em;
+  box-shadow: 2px 4px 10px hsla(0deg, 0%, 0%, 0.8);
+  border: none;
+  min-height: 400px;
+  background: #bcc5ba;
+}
+.card:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+.card .btn {
+  margin: 0.8em;
+  flex-direction: row;
+}
+.card .btn.btn-register {
+  background: #6EA4BF;
+}
+.card .btn.btn-location {
+  background: #f2ae1c;
+}
+.card .btn:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+@media all and (min-width: 800px) {
+  .cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 1200px) {
+  .events {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+    padding-right: 30px;
+  }
 }/*# sourceMappingURL=events.css.map */

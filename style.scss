@@ -12,7 +12,18 @@
     align-items: center;
 }
 
+$headerBgColor: #6EA4BF;
+$mainBgColor: #b7d0ce;
+$asideBgColor: #bcc5ba;
+$cardBgColor: #f2ae1c;
+$cardBgColorHover: lighten(#f2ae1c, 15%);
+$footerBgColor: #331E36;
+$btnBgColor: #6EA4BF;
+$btnBgColorLighter: lighten(#6EA4BF, 10%);
 
+$large-font-size: 1.4em;
+$small-font-size: 0.8em;
+$medium-font-size: 1.2em;
 
 /*main style*/
 .main {
