@@ -98,6 +98,9 @@
     justify-content: end;
     font-size: 1.2em;
   }
+  .navbar-collapse .nav-item:hover {
+    scale: 1.1;
+  }
 }
 /*Responsive with medi@queries*/
 @media all and (min-width: 800px) {
