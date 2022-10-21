@@ -16,6 +16,7 @@ $medium-font-size: 1.2em;
     margin-top: 20px;
     box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.8);
     position: inherit;
+    border: none;
 }
 
 /*Placeholder*/
@@ -24,8 +25,6 @@ $medium-font-size: 1.2em;
     justify-content: center;
     align-items: center;
 }
-
-
 
 /* Initializing page layout with flexbox */
 
@@ -57,21 +56,20 @@ $medium-font-size: 1.2em;
     margin: 0%;
     background: #6EA4BF;
     border-radius: 0%;
-    max-height: 70px;
+    max-height: 70px;   
 }
+
 
 .navbar-collapse {
     background: #6EA4BF;
 }
 
-
 .navbar-toggler {
     border: none;
     padding: 4px 0px 4px 0px;
 
-    &:focus {
-        border: 0 !important;
-        /* doesn't work grrr*/
+    &:focus {    
+        box-shadow: none;
     }
 }
 
@@ -81,6 +79,7 @@ $medium-font-size: 1.2em;
 
 .navbar-expand-lg {
     padding: 0;
+
 }
 
 .navbar-brand {
@@ -120,15 +119,18 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-
-
 }
 
 #firstImg {
     border-radius: 10px;
 }
+.info{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
 
-.imageType1 {
+.Jim_Parson {
     height: 200px;
     width: 150px;
     float: left;
@@ -139,6 +141,7 @@ h2 {
     padding-top: 10px;
     font-style: italic;
     font-size: $small-font-size;
+    
 }
 
 /* Asides*/
@@ -238,10 +241,6 @@ h2 {
         }
     }
        
-            
-    
-    
-
     .main {
         order: 2;
     }
@@ -251,15 +250,12 @@ h2 {
         font-size: $medium-font-size;
     }
 
-
     .navbar-brand {
         display: flex;
         justify-content: start;
         width: 20%;
         padding-top: 0;
     }
-
-
 
 }
 
@@ -309,6 +305,7 @@ h2 {
 
         h1 {
             font-size: $large-font-size;
+            padding-top: 50px;
         }
     }
 

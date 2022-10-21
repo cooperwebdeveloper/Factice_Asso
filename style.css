@@ -47,8 +47,7 @@ h2 {
   padding: 4px 0px 4px 0px;
 }
 .navbar-toggler:focus {
-  border: 0 !important;
-  /* doesn't work grrr*/
+  box-shadow: none;
 }
 
 .navbar-toggler-icon {
@@ -96,7 +95,13 @@ h2 {
   border-radius: 10px;
 }
 
-.imageType1 {
+.info {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.Jim_Parson {
   height: 200px;
   width: 150px;
   float: left;
@@ -121,6 +126,7 @@ h2 {
   margin-top: 20px;
   box-shadow: 2px 4px 10px hsla(0deg, 0%, 0%, 0.8);
   position: inherit;
+  border: none;
   font-size: 0.8em;
   background: #f2ae1c;
   transition: all 0.5s;
@@ -151,6 +157,7 @@ h2 {
   margin-top: 20px;
   box-shadow: 2px 4px 10px hsla(0deg, 0%, 0%, 0.8);
   position: inherit;
+  border: none;
   background: #6EA4BF;
   border: none;
   width: 50%;
@@ -249,6 +256,7 @@ h2 {
   }
   .mainImage h1 {
     font-size: 1.4em;
+    padding-top: 50px;
   }
   .navbar-nav {
     font-size: 1.2em;
