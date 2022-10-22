@@ -1,0 +1,150 @@
+$headerBgColor: #6EA4BF;
+$mainBgColor: #b7d0ce;
+$asideBgColor: #bcc5ba;
+$cardBgColor: #f2ae1c;
+$cardBgColorHover: lighten(#f2ae1c, 15%);
+$footerBgColor: #331E36;
+$btnBgColor: #6EA4BF;
+$btnBgColorLighter: lighten(#6EA4BF, 10%);
+
+$large-font-size: 1.4em;
+$small-font-size: 0.8em;
+$medium-font-size: 1.2em;
+
+/*Placeholder*/
+%flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    height:40px;
+    width: 100%;
+}
+.card{
+    position: inherit;
+    margin: 1em;
+    box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.8); 
+    border: none;
+    min-height: 410px;
+    background: $asideBgColor;
+    
+    
+    .btn{
+        
+        margin: .8em;
+        flex-direction: row;
+        
+        &.btn-register{
+            background:$btnBgColor ;
+        }
+        &.btn-location{
+            background:$cardBgColor ;
+        }
+        &:hover{
+            transform: scale(1.2);
+            transition: all 1s;
+    }
+        &.btn-primary{
+            background: $btnBgColor;
+            border: none;
+        }
+}
+}
+
+/*flip cards*/
+.events{
+    
+    display:flex;
+    flex-flow: column nowrap;
+    height: 3000px;
+    margin-top: 80px;
+    background: $cardBgColor;
+    justify-content: start;
+    
+}
+
+.cards{
+    display: flex;
+    align-self: center;
+    margin-top: 20px;
+    flex-flow: column nowrap;
+    
+    height: 700px;
+    
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-in-out;
+    // transform: perspective(1000px);
+    &:hover{
+        transform:rotateY(180deg)
+    }
+}
+
+.card-front{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: $mainBgColor;
+    color: #000;
+  }
+
+  .card-back{
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+   
+  }
+  /*modal */
+
+ .modal-content{
+    background: $btnBgColor;
+    .close{
+        border: none;
+        box-shadow: none;
+        background: none;
+    }
+    .btn-secondary{
+            background: #333;
+    }
+    .btn-primary{
+        background:$cardBgColor;
+        color: #000;
+        border: none;
+        &:active{
+            background: $cardBgColorHover;
+        }
+       
+    }
+ }
+ 
+
+
+
+
+
+
+
