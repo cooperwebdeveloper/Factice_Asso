@@ -5,13 +5,16 @@
   align-items: center;
 }
 
+body {
+  font-family: "Comfortaa", cursive;
+}
+
 /*wrapper style*/
 .wrapper > * {
   padding: 10px;
   margin: 10px;
   flex: 1 100%;
   border-radius: 10px;
-  font-family: sans-serif;
 }
 .wrapper > * a {
   text-decoration: none;
@@ -22,6 +25,10 @@
 .header {
   background: #6EA4BF;
   height: 120px;
+}
+
+h1 {
+  font-family: "Amatic SC", cursive;
 }
 
 /*bootstrap navbar*/
@@ -67,7 +74,7 @@
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
-  min-width: auto;
+  min-width: 100%;
   color: antiquewhite;
   font-size: 0.8em;
 }

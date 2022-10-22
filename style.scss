@@ -1,4 +1,19 @@
-@import url(./main.scss);
+$headerBgColor: #6EA4BF;
+$mainBgColor: #b7d0ce;
+$asideBgColor: #bcc5ba;
+$cardBgColor: #f2ae1c;
+$cardBgColorHover: lighten(#f2ae1c, 15%);
+$footerBgColor: #331E36;
+$btnBgColor: #6EA4BF;
+$btnBgColorLighter: lighten(#6EA4BF, 10%);
+$xx-large-font-size: 3em;
+$x-large-font-size: 2em;
+$large-font-size: 1.4em;
+$small-font-size: 0.8em;
+$medium-font-size: 1.2em;
+
+
+/*mixins*/
 @mixin card {
     margin-top: 20px;
     box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.8);
@@ -14,18 +29,7 @@
 }
 
 
-$headerBgColor: #6EA4BF;
-$mainBgColor: #b7d0ce;
-$asideBgColor: #bcc5ba;
-$cardBgColor: #f2ae1c;
-$cardBgColorHover: lighten(#f2ae1c, 15%);
-$footerBgColor: #331E36;
-$btnBgColor: #6EA4BF;
-$btnBgColorLighter: lighten(#6EA4BF, 10%);
 
-$large-font-size: 1.4em;
-$small-font-size: 0.8em;
-$medium-font-size: 1.2em;
 
 
 /*main style*/
@@ -43,6 +47,7 @@ $medium-font-size: 1.2em;
     img {
         border-radius: 10%;
         box-shadow: 2px 4px 5px hsla(0, 0%, 0%, 0.8);
+        
     }
 }
 
@@ -51,6 +56,7 @@ h3,
 h2 {
     @extend %flex-centered;
     font-size: $medium-font-size;
+    font-family: 'Karma', serif;
     
 }
 
@@ -62,6 +68,10 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    margin-bottom: 30px;
+    h1{
+        font-size: $x-large-font-size;
+    }
 
 }
 
@@ -199,7 +209,7 @@ h2 {
         background-position: bottom;
 
         h1 {
-            font-size: $large-font-size;
+            font-size: $xx-large-font-size;
             padding-top: 50px;
         }
     }

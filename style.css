@@ -1,4 +1,4 @@
-@import url(./main.scss);
+/*mixins*/
 /*Placeholder*/
 .mainImage, h3,
 h2 {
@@ -25,6 +25,7 @@ h2 {
 h3,
 h2 {
   font-size: 1.2em;
+  font-family: "Karma", serif;
 }
 
 /*main content*/
@@ -34,6 +35,10 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  margin-bottom: 30px;
+}
+.mainImage h1 {
+  font-size: 2em;
 }
 
 #firstImg {
@@ -149,7 +154,7 @@ h2 {
     background-position: bottom;
   }
   .mainImage h1 {
-    font-size: 1.4em;
+    font-size: 3em;
     padding-top: 50px;
   }
   .aside2 .card {

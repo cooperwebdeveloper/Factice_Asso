@@ -112,7 +112,7 @@ $medium-font-size: 1.2em;
     border-radius: 10px;
     backface-visibility: hidden;
     overflow: hidden;
-    background: #fafafa;
+    background: $mainBgColor;
     color: #333;
     text-align: center;
     transform: rotateY(180deg);

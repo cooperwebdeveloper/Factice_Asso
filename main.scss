@@ -26,6 +26,12 @@ $medium-font-size: 1.2em;
 }
 
 
+
+body{
+    font-family: 'Comfortaa', cursive; 
+}
+
+
 /*wrapper style*/
 
 .wrapper>* {
@@ -33,7 +39,7 @@ $medium-font-size: 1.2em;
     margin: 10px;
     flex: 1 100%;
     border-radius: 10px;
-    font-family: sans-serif;
+    
     a {
         text-decoration: none;
         color: inherit;
@@ -45,6 +51,9 @@ $medium-font-size: 1.2em;
 .header {
     background: #6EA4BF;
     height: 120px;
+}
+h1{
+    font-family: 'Amatic SC', cursive;
 }
 
 /*bootstrap navbar*/
@@ -93,7 +102,7 @@ $medium-font-size: 1.2em;
     justify-content: space-between;
     background: #331E36;
     max-height: max-content;
-    min-width: auto;
+    min-width: 100%;
     color: antiquewhite;
     font-size: $small-font-size;
 }
